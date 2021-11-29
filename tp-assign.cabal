@@ -1,0 +1,70 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           tp-assign
+version:        0.1.0.0
+description:    Please see the README
+homepage:       https://github.com/MerHS/tp-assign#readme
+bug-reports:    https://github.com/MerHS/tp-assign/issues
+author:         MerHS
+maintainer:     MerHS
+copyright:      2021 Ho Young Jhoo
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+extra-source-files:
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/MerHS/tp-assign
+
+library
+  exposed-modules:
+      AhoCorasick
+      BakerBird
+      KMP
+      Utils
+  other-modules:
+      Paths_tp_assign
+  hs-source-dirs:
+      src
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , criterion
+  default-language: Haskell2010
+
+executable tp-assign-bench
+  main-is: Bench.hs
+  other-modules:
+      Paths_tp_assign
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -O2
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , criterion
+    , tp-assign
+  default-language: Haskell2010
+
+executable tp-assign-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_tp_assign
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N -O2
+  build-depends:
+      array
+    , base >=4.7 && <5
+    , bytestring
+    , criterion
+    , tp-assign
+  default-language: Haskell2010

@@ -1,0 +1,26 @@
+5 20
+abacd
+dbeea
+bacce
+ddcad
+eedcb
+accbedcabdbabdacbacd
+acedbccaabcdabbeccbc
+bbabecbebcbedbcececd
+dbeccababbddeadaccbb
+deaaeabeeddeeccccdae
+babacdadceedebaececa
+ddbabacdbeaaabeaacbb
+abadbeeabaededaeeaee
+cddbacceebdeebbedced
+beeddcaddccbbdecbcee
+baceedcbaecbdbebbddb
+bacddcadbaeddccabbbe
+cddeedcbdbccddcadccc
+beabceaeedbabacddecc
+bbaddabdcdbdbeeaeaee
+aaaacdeeaadbacceaeec
+ddbbcabaaadddcadcddc
+ebdeedbaebceedcbcdaa
+caceacdbdaeabdccdbeb
+dcceddcdcbeebbbcdcdb

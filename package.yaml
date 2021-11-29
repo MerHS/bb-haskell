@@ -1,0 +1,51 @@
+name:                tp-assign
+version:             0.1.0.0
+github:              "MerHS/tp-assign"
+license:             BSD3
+author:              "MerHS"
+maintainer:          "MerHS"
+copyright:           "2021 Ho Young Jhoo"
+
+extra-source-files:
+- README.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Web
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README 
+
+dependencies:
+- base >= 4.7 && < 5
+- bytestring
+- array
+- criterion
+
+library:
+  source-dirs: src
+
+executables:
+  tp-assign-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2
+    dependencies:
+    - tp-assign
+
+  tp-assign-bench:
+    main:                Bench.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    - -O2
+    dependencies:
+    - tp-assign
